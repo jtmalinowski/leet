@@ -1,4 +1,4 @@
-// g++ -std=c++11 956-tallest-billboard-v2.cpp -o app && ./app
+// g++ -std=c++11 0956-tallest-billboard.cpp -o app && ./app
 // leet uses c++11
 
 #include <iostream>
