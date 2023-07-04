@@ -1,1 +1,4 @@
 .vscode/
+
+# gcc produced exec
+app
