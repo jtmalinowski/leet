@@ -49,3 +49,17 @@ void assertEq(double res, double expected, double threshold) {
   }
   caseIdx++;
 }
+
+template<typename T>
+void assertEq(std::vector<T> res, std::vector<T> expected) {
+  if (res.size() != expected.size()) {
+    cout << "case: " << caseIdx <<  " expected size() to be: " << expected.size() << " but was: " << res.size() << "\n";
+  } else {
+    for (int idx = 0; idx < res.size(); idx++) {
+      if (res[idx] != expected[idx]) {
+        cout << "case: " << caseIdx <<  " expected [" << idx << "] to be: " << expected[idx] << " but was: " << res[idx] << "\n";
+      }
+    }
+  }
+  caseIdx++;
+}
